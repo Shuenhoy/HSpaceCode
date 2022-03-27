@@ -2,7 +2,7 @@ import { commands, env, ExtensionContext, extensions, Uri } from 'vscode';
 import { copyWholeBuffer } from './bufferCommands';
 import { configKeyBindings, configSettings } from './configuration/configuration';
 import { BindingsId, CommandId, extensionQualifiedId, GlobalState } from './constants';
-import { showUpdateMessage, showWelcomeMessage } from './messages';
+import { showUpdateMessage } from './messages';
 import { copyWrapper, getDirectoryPath, getFilename, getFilenameBase, getPath, getPathWithLine, getPathWithLineColumn, getRelativeDirectoryPath, getRelativePath, getRelativePathWithLine, getRelativePathWithLineColumn } from './pathCommands';
 
 
@@ -13,7 +13,6 @@ export async function activate(context: ExtensionContext) {
     console.log(`VSpaceCode loaded: v${previousVersion} -> v${currentVersion}`);
     context.globalState.update(GlobalState.SpacecodeVersion, currentVersion);
     if (previousVersion === undefined) {
-        showWelcomeMessage();
     } else {
         showUpdateMessage(currentVersion, previousVersion);
     }

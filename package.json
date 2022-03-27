@@ -2,7 +2,7 @@
 	"name": "hspacecode",
 	"preview": true,
 	"displayName": "HSpaceCode",
-	"description": "Helix like keybindings for Visual Studio Code, a Fork of VSpaceCode and based on Dance",
+	"description": "Helix like keybindings for Visual Studio Code, a Fork of HSpaceCode and based on Dance",
 	"publisher": "Shuenhoy",
 	"author": {
 		"name": "Shuenhoy"
@@ -40,56 +40,38 @@
 		"workspace"
 	],
 	"license": "SEE LICENSE IN LICENSE.txt",
-	"homepage": "https://github.com/VSpaceCode/VSpaceCode",
+	"homepage": "https://github.com/HSpaceCode/HSpaceCode",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/VSpaceCode/VSpacecode.git"
+		"url": "https://github.com/HSpaceCode/VSpacecode.git"
 	},
 	"bugs": {
-		"url": "https://github.com/VSpaceCode/VSpaceCode/issues"
+		"url": "https://github.com/HSpaceCode/HSpaceCode/issues"
 	},
 	"activationEvents": [
 		"onStartupFinished",
-		"onCommand:vspacecode.space",
-		"onCommand:vspacecode.showMagitRefMenu",
-		"onCommand:vspacecode.configure",
-		"onCommand:vspacecode.configureSettings",
-		"onCommand:vspacecode.configureKeybindings",
-		"onCommand:vspacecode.openDocumentationUrl"
+		"onCommand:hspacecode.space",
+		"onCommand:hspacecode.showMagitRefMenu",
+		"onCommand:hspacecode.openDocumentationUrl"
 	],
 	"main": "./dist/extension-node",
 	"browser": "./dist/extension-web",
 	"contributes": {
 		"commands": [
 			{
-				"command": "vspacecode.space",
-				"title": "Show VSpaceCode Menu",
-				"category": "VSpaceCode"
+				"command": "hspacecode.space",
+				"title": "Show HSpaceCode Menu",
+				"category": "HSpaceCode"
 			},
 			{
-				"command": "vspacecode.showMagitRefMenu",
+				"command": "hspacecode.showMagitRefMenu",
 				"title": "Show Magit Ref Menu",
-				"category": "VSpaceCode"
+				"category": "HSpaceCode"
 			},
 			{
-				"command": "vspacecode.configure",
-				"title": "Configure Default Settings and Keybindings",
-				"category": "VSpaceCode"
-			},
-			{
-				"command": "vspacecode.configureSettings",
-				"title": "Configure Default Settings",
-				"category": "VSpaceCode"
-			},
-			{
-				"command": "vspacecode.configureKeybindings",
-				"title": "Configure Default Keybindings",
-				"category": "VSpaceCode"
-			},
-			{
-				"command": "vspacecode.openDocumentationUrl",
+				"command": "hspacecode.openDocumentationUrl",
 				"title": "Open Documentation",
-				"category": "VSpaceCode"
+				"category": "HSpaceCode"
 			}
 		],
 		"keybindings": [
@@ -109,7 +91,7 @@
 			},
 			{
 				"key": "space",
-				"command": "vspacecode.space",
+				"command": "hspacecode.space",
 				"when": "editorTextFocus && dance.mode == 'normal'"
 			},
 			{
@@ -1497,10 +1479,10 @@
 		},
 		"configuration": [
 			{
-				"title": "VSpaceCode",
+				"title": "HSpaceCode",
 				"type": "object",
 				"properties": {
-					"vspacecode.magitRefBindings": {
+					"hspacecode.magitRefBindings": {
 						"type": "array",
 						"markdownDescription": "The bindings of magit ref menu",
 						"default": [
@@ -1527,9 +1509,9 @@
 							}
 						]
 					},
-					"vspacecode.bindings": {
+					"hspacecode.bindings": {
 						"type": "array",
-						"markdownDescription": "The bindings of VSpaceCode menu",
+						"markdownDescription": "The bindings of HSpaceCode menu",
 						"default": [
 							{
 								"key": " ",
@@ -1586,7 +1568,7 @@
 								"icon": "redo",
 								"type": "command",
 								"command": "whichkey.repeatMostRecent",
-								"args": "vspacecode.bindings"
+								"args": "hspacecode.bindings"
 							},
 							{
 								"key": "/",
@@ -1927,7 +1909,7 @@
 										"name": "Copy buffer to clipboard",
 										"icon": "clippy",
 										"type": "command",
-										"command": "vspacecode.copyWholeBuffer"
+										"command": "hspacecode.copyWholeBuffer"
 									},
 									{
 										"key": "N",
@@ -2460,7 +2442,7 @@
 									},
 									{
 										"key": "e",
-										"name": "+Emacs/VSpaceCode",
+										"name": "+Emacs/HSpaceCode",
 										"icon": "settings",
 										"type": "bindings",
 										"bindings": [
@@ -2583,70 +2565,70 @@
 												"name": "Copy path of active file with line and column",
 												"icon": "list-selection",
 												"type": "command",
-												"command": "vspacecode.copyPathWithLineColumn"
+												"command": "hspacecode.copyPathWithLineColumn"
 											},
 											{
 												"key": "d",
 												"name": "Copy directory path of the active file",
 												"icon": "file-directory",
 												"type": "command",
-												"command": "vspacecode.copyDirectoryPath"
+												"command": "hspacecode.copyDirectoryPath"
 											},
 											{
 												"key": "l",
 												"name": "Copy path of active file with line",
 												"icon": "list-flat",
 												"type": "command",
-												"command": "vspacecode.copyPathWithLine"
+												"command": "hspacecode.copyPathWithLine"
 											},
 											{
 												"key": "n",
 												"name": "Copy filename of active file",
 												"icon": "file",
 												"type": "command",
-												"command": "vspacecode.copyFilename"
+												"command": "hspacecode.copyFilename"
 											},
 											{
 												"key": "y",
 												"name": "Copy path of active file",
 												"icon": "go-to-file",
 												"type": "command",
-												"command": "vspacecode.copyPath"
+												"command": "hspacecode.copyPath"
 											},
 											{
 												"key": "C",
 												"name": "Copy relative path of active file with line and column",
 												"icon": "list-selection",
 												"type": "command",
-												"command": "vspacecode.copyRelativePathWithLineColumn"
+												"command": "hspacecode.copyRelativePathWithLineColumn"
 											},
 											{
 												"key": "D",
 												"name": "Copy relative directory path of the active file",
 												"icon": "file-directory",
 												"type": "command",
-												"command": "vspacecode.copyRelativeDirectoryPath"
+												"command": "hspacecode.copyRelativeDirectoryPath"
 											},
 											{
 												"key": "L",
 												"name": "Copy relative path of active file with line",
 												"icon": "list-flat",
 												"type": "command",
-												"command": "vspacecode.copyRelativePathWithLine"
+												"command": "hspacecode.copyRelativePathWithLine"
 											},
 											{
 												"key": "N",
 												"name": "Copy filename without extension of active file",
 												"icon": "file",
 												"type": "command",
-												"command": "vspacecode.copyFilenameBase"
+												"command": "hspacecode.copyFilenameBase"
 											},
 											{
 												"key": "Y",
 												"name": "Copy relative path of active file",
 												"icon": "go-to-file",
 												"type": "command",
-												"command": "vspacecode.copyRelativePath"
+												"command": "hspacecode.copyRelativePath"
 											}
 										]
 									}
@@ -2753,10 +2735,10 @@
 									},
 									{
 										"key": "D",
-										"name": "Open VSpaceCode Documentation",
+										"name": "Open HSpaceCode Documentation",
 										"icon": "book",
 										"type": "command",
-										"command": "vspacecode.openDocumentationUrl"
+										"command": "hspacecode.openDocumentationUrl"
 									},
 									{
 										"key": "I",
@@ -7986,7 +7968,7 @@
 										"icon": "redo",
 										"type": "command",
 										"command": "whichkey.repeatRecent",
-										"args": "vspacecode.bindings"
+										"args": "hspacecode.bindings"
 									},
 									{
 										"key": "b",
@@ -9042,7 +9024,7 @@
 							}
 						]
 					},
-					"vspacecode.bindingOverrides": {
+					"hspacecode.bindingOverrides": {
 						"type": "array",
 						"markdownDescription": "Overrides bindings of the (default) space key"
 					}

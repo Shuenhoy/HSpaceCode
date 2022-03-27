@@ -1,29 +1,29 @@
-export const extensionId = 'vspacecode';
-export const publisherId = 'VSpaceCode';
+export const extensionId = 'hspacecode';
+export const publisherId = 'Shuenhoy';
 export const extensionQualifiedId = `${publisherId}.${extensionId}`;
 export const spaceCmdId = `${extensionId}.space`;
 export enum CommandId {
-	ShowSpaceMenu = "vspacecode.space",
-	ShowMagitRefMenu = "vspacecode.showMagitRefMenu",
+	ShowSpaceMenu = "hspacecode.space",
+	ShowMagitRefMenu = "hspacecode.showMagitRefMenu",
 
-	Configure = "vspacecode.configure",
-	ConfigureSettings = "vspacecode.configureSettings",
-	ConfigureKeybindings = "vspacecode.configureKeybindings",
+	Configure = "hspacecode.configure",
+	ConfigureSettings = "hspacecode.configureSettings",
+	ConfigureKeybindings = "hspacecode.configureKeybindings",
 
-	OpenDocumentationUrl = "vspacecode.openDocumentationUrl",
+	OpenDocumentationUrl = "hspacecode.openDocumentationUrl",
 
-	CopyPath = "vspacecode.copyPath",
-	CopyPathWithLine = "vspacecode.copyPathWithLine",
-	CopyPathWithLineColumn = "vspacecode.copyPathWithLineColumn",
-	CopyDirectoryPath = "vspacecode.copyDirectoryPath",
-	CopyRelativePath = "vspacecode.copyRelativePath",
-	CopyRelativePathWithLine = "vspacecode.copyRelativePathWithLine",
-	CopyRelativePathWithLineColumn = "vspacecode.copyRelativePathWithLineColumn",
-	CopyRelativeDirectoryPath = "vspacecode.copyRelativeDirectoryPath",
-	CopyFilename = "vspacecode.copyFilename",
-	CopyFilenameBase = "vspacecode.copyFilenameBase",
+	CopyPath = "hspacecode.copyPath",
+	CopyPathWithLine = "hspacecode.copyPathWithLine",
+	CopyPathWithLineColumn = "hspacecode.copyPathWithLineColumn",
+	CopyDirectoryPath = "hspacecode.copyDirectoryPath",
+	CopyRelativePath = "hspacecode.copyRelativePath",
+	CopyRelativePathWithLine = "hspacecode.copyRelativePathWithLine",
+	CopyRelativePathWithLineColumn = "hspacecode.copyRelativePathWithLineColumn",
+	CopyRelativeDirectoryPath = "hspacecode.copyRelativeDirectoryPath",
+	CopyFilename = "hspacecode.copyFilename",
+	CopyFilenameBase = "hspacecode.copyFilenameBase",
 
-	CopyWholeBuffer = "vspacecode.copyWholeBuffer",
+	CopyWholeBuffer = "hspacecode.copyWholeBuffer",
 
 	RegisterWhichKey = "whichkey.register",
 	ShowWhichKey = "whichkey.show"
