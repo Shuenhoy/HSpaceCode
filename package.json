@@ -22,19 +22,18 @@
 	],
 	"keywords": [
 		"spacemacs",
-		"vscode",
-		"vim",
-		"VSCodeVim"
+		"vscode"
 	],
 	"extensionPack": [
 		"VSpaceCode.whichkey",
-		"vscodevim.vim",
+		"gregoire.dance",
 		"kahole.magit",
 		"jacobdufault.fuzzy-search",
 		"bodil.file-browser"
 	],
 	"extensionDependencies": [
-		"VSpaceCode.whichkey"
+		"VSpaceCode.whichkey",
+		"gregoire.dance"
 	],
 	"extensionKind": [
 		"ui",
@@ -133,19 +132,6 @@
 								"icon": "list-selection",
 								"type": "command",
 								"command": "magit.copy-section-value"
-							},
-							{
-								"key": "y",
-								"name": "Yank a line",
-								"icon": "list-flat",
-								"type": "command",
-								"command": "vim.remap",
-								"args": {
-									"after": [
-										"y",
-										"y"
-									]
-								}
 							}
 						]
 					},
@@ -1460,38 +1446,6 @@
 										"command": "workbench.action.gotoSymbol"
 									},
 									{
-										"key": "j",
-										"name": "Jump to character",
-										"icon": "case-sensitive",
-										"type": "command",
-										"command": "vim.remap",
-										"args": {
-											"after": [
-												"leader",
-												"leader",
-												"s"
-											]
-										}
-									},
-									{
-										"key": "l",
-										"name": "Jump to line",
-										"icon": "list-flat",
-										"type": "command",
-										"command": "vim.remap",
-										"args": {
-											"after": [
-												"leader",
-												"leader",
-												"leader",
-												"b",
-												"d",
-												"j",
-												"k"
-											]
-										}
-									},
-									{
 										"key": "n",
 										"name": "Split new line",
 										"icon": "whitespace",
@@ -1504,23 +1458,6 @@
 										"icon": "variable",
 										"type": "command",
 										"command": "breadcrumbs.focusAndSelect"
-									},
-									{
-										"key": "w",
-										"name": "Jump to word",
-										"icon": "symbol-keyword",
-										"type": "command",
-										"command": "vim.remap",
-										"args": {
-											"after": [
-												"leader",
-												"leader",
-												"leader",
-												"b",
-												"d",
-												"w"
-											]
-										}
 									},
 									{
 										"key": "C",
@@ -6681,20 +6618,6 @@
 								"icon": "search",
 								"type": "bindings",
 								"bindings": [
-									{
-										"key": "c",
-										"name": "Clear highlight",
-										"icon": "clear-all",
-										"type": "command",
-										"command": "vim.remap",
-										"args": {
-											"commands": [
-												{
-													"command": ":noh"
-												}
-											]
-										}
-									},
 									{
 										"key": "e",
 										"name": "Edit symbol",
