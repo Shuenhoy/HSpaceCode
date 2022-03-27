@@ -1,3 +1,10 @@
+# HSpaceCode (WIP)
+
+This is a fork of VSpaceCode. This use Dance to provide Helix-like keybindings.
+
+---
+*Original VSpaceCode Readme starts here:*
+
 # VSpaceCode (Preview)
 [![Docs](https://img.shields.io/website?label=vspacecode.github.io&url=https%3A%2F%2Fvspacecode.github.io)](https://vspacecode.github.io)
 [![Version](https://vsmarketplacebadge.apphb.com/version/vspacecode.vspacecode.svg)](https://marketplace.visualstudio.com/items?itemName=vspacecode.vspacecode)
