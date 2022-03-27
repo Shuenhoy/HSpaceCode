@@ -1,11 +1,11 @@
 {
-	"name": "vspacecode",
+	"name": "hspacecode",
 	"preview": true,
-	"displayName": "VSpaceCode",
-	"description": "Spacemacs like keybindings for Visual Studio Code",
-	"publisher": "VSpaceCode",
+	"displayName": "HSpaceCode",
+	"description": "Helix like keybindings for Visual Studio Code, a Fork of VSpaceCode and based on Dance",
+	"publisher": "Shuenhoy",
 	"author": {
-		"name": "Steven Guh"
+		"name": "Shuenhoy"
 	},
 	"version": "0.10.7",
 	"engines": {
