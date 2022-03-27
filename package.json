@@ -1248,7 +1248,8 @@
 			},
 			{
 				"key": "shift+d",
-				"command": "editor.action.addSelectionToNextFindMatch"
+				"command": "editor.action.addSelectionToNextFindMatch",
+				"when": "editorTextFocus && dance.mode == 'normal' || editorTextFocus && dance.mode == 'extend-select'"
 			},
 			{
 				"key": "alt+shift+q",
